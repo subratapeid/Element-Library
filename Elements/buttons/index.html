@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Buttons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Simple Toggle Button -->
+    <button class="toggle-btn" data-on="Active" data-off="Inactive" data-action="alert"
+        data-message="Button Toggled!"></button>
+
+    <!-- Toggle for Show/Hide -->
+    <button class="toggle-btn" data-action="toggle" data-target="#hiddenText" data-on="Show" data-off="Hide"></button>
+    <div id="hiddenText" style="display:none;">This is a hidden text!</div>
+
+    <!-- Custom Action -->
+    <button class="toggle-btn" data-action="customAction" data-target="#customTarget"></button>
+    <div id="customTarget" style="color:blue;">Custom Target Element</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
